@@ -1,4 +1,4 @@
-{% if page.meta.comments %}
+{% if page.meta.comments is not defined or page.meta.comments %}
   <h2 id="__comments">评论</h2>
     <script src="https://giscus.app/client.js"
             data-repo="OrangeJuiceWithIce/note"
